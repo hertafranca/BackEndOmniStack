@@ -1,16 +1,16 @@
-const mongoose = require('mongoose');
-const PointSchema = require('../utils/pointSchema')
+const mongoose = require("mongoose");
+const PointSchema = require("../utils/pointSchema");
 
 const mongooseSchema = new mongoose.Schema({
-name: String,
-github_username: String,
-bio: String,
-avatar_url: String,
-techs: [String],
-location:{
+  name: String,
+  github_username: String,
+  bio: String,
+  avatar_url: String,
+  techs: [String],
+  location: {
     type: PointSchema,
-    index: '2dsphere'
-}
-})
+    index: "2dsphere"
+  }
+});
 
-module.exports = mongoose.model('Dev', mongooseSchema);
+module.exports = mongoose.model("Dev", mongooseSchema);
