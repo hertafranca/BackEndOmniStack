@@ -1,6 +1,6 @@
 module.exports = {
   parseStringAsArray(arrayAsString) {
-    return arrayAsString.split(",").map(tech => tech.toLowerCase().trim());
+    return arrayAsString.split(',').map(tech => tech.toLowerCase().trim());
   },
 
   formatedTech(tech) {

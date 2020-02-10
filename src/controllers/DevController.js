@@ -12,6 +12,7 @@ module.exports = {
       return {
         _id: dev._id,
         bio: dev.bio,
+        name: dev.name,
         github_username: dev.github_username,
         avatar_url: dev.avatar_url,
         techs: dev.techs.map(tech => formatedTech(tech)),
